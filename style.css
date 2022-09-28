@@ -133,7 +133,7 @@ button {
 
 .green-button,
 .card .green-button {
-  background: #36B37F;
+  background: #36b37f;
   border-radius: 4px;
   border: none;
   color: white;
@@ -299,5 +299,5 @@ button {
   #menu-toggle {
     display: none;
   }
-  
+
 }
