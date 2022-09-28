@@ -22,11 +22,11 @@ body {
   justify-content: center;
 }
 
-main {  
+main {
   border: red;
 }
 
-.menu-button {  
+.menu-button {
   border: 3px solid black;
   background: white;
   width: 24px;
@@ -38,19 +38,19 @@ main {
   text-align: center;
   flex-direction: column;
   font-weight: 700;
-  font-size: 40px;  
+  font-size: 40px;
 }
 
 .headline h1.green {
   color: #36b37f;
 }
 
-#supporting-text {  
+#supporting-text {
   font-weight: 400;
   font-size: 20px;
-  line-height: 28px;  
+  line-height: 28px;
   text-align: center; 
-  color: #172b4d;  
+  color: #172b4d;
 }
 
 #social-media-icons ul {
@@ -273,8 +273,8 @@ button {
   #logo-placeholder,
   .menu-button-container,
   .menu-icon {
-    visibility:visible;
-    display:initial;
+    visibility: visible;
+    display: initial;
   }
 
   .nav,
@@ -299,4 +299,5 @@ button {
   #menu-toggle {
     display: none;
   }
+  
 }
