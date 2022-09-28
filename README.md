@@ -1,4 +1,4 @@
-# amen-tetteh-portfolio# my-portfolio
+# amen-tetteh-portfolio
 
 > My Portfolio Project
 
