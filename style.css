@@ -49,7 +49,7 @@ main {
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
-  text-align: center; 
+  text-align: center;
   color: #172b4d;
 }
 
@@ -253,7 +253,7 @@ button {
   align-content: center;
   align-items: center;
   margin: 22px 32px 64px;
-  justify-content:center;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -299,5 +299,4 @@ button {
   #menu-toggle {
     display: none;
   }
-
 }
