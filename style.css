@@ -1,338 +1,319 @@
-/* variables*/
+/* variables */
 :root {
-    --white: #FFFFFF;
-    --black: black;
-  
-  }
-  
+  --white: #fff;
+  --black: black;
 
-/* reset*/
+}
+
+/* reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* body settings*/
+/* body settings */
 body {
-    background: var(--white);
-    font-family: 'Inter';
-    font-style: normal;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background: var(--white);
+  font-family: 'Inter';
+  font-style: normal;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   
-  }
+}
   
-  main {
-  
-    border: red;
-  }
-  
-  
-  .menu-button {
-  
-    border: 3px solid var(--black);
-    background: white;
-    width: 24px;
-  }
+main {  
+  border: red;
+}
   
   
+.menu-button {  
+  border: 3px solid black;
+  background: white;
+  width: 24px;
+}
+   
+  
+  
+.headline {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 40px;
+  
+}
+  
+.headline h1.green {
+  color: #36B37F;
+}
+  
+#supporting-text {  
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;  
+  text-align: center; 
+  color: #172B4D;  
+}
+  
+#social-media-icons ul {
+  display: flex;
+}
+  
+#collapse-action-button {
+  background: url("assets/images/disabled.png") no-repeat 0 center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #DFE1E6;
+  border-radius: 32px;
+  margin: 22px 0;
+}
+  
+#indicator {
+  background: url("assets/images/indicator.png") no-repeat 0 center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;  
+  margin: 22px auto;
+}
+  
+.project-title {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 12px;
+  
+  
+}
+  
+.project-tags-list,
+.social-media-icons-list,
+.about-me-tags-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+  
+.social-media-icons-list {
+  gap: 20px;
+}
+
+button {
+  cursor: pointer;
+}
+    
+.card button {
+  background: #ebebf0;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 12px;
+  border-color: transparent;
+  letter-spacing: 0.03em;
+  height: 32px;
+  padding: 8px 12px;  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+  
+}
+  
+.project-tags {
+  display: flex;
+  
+}
+  
+.card {
+  display: flex;
+  flex-direction: column;
+  background-image: url("assets/images/img-plaholder.png");
+  background-size: cover;
+  align-items: center;
+  gap: 16px;
+  border-radius: 8px;  
+  border: 1px solid #d0d9d4;
+  margin: 24px;
+  background-color: var(--white);
+}
+  
+  
+
+.green-button,
+.card .green-button {
+  background: #36B37F;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;  
+  font-size: 16px;
+  font-weight: 500;  
+  height: 48px;
+}
+  
+.card-content {
+  background: var(--white);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+  
+#detail-button {
+  margin: 29px auto 24px;
+}
+  
+#resume-button {
+  margin: 24px auto 60px;
+}
+  
+.card header {
+  height: 180px;
+  border: #42526E;
+  background: transparent;
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  
+}
+  
+#about-me .primary-header {
+  margin: 68px auto 24px;
+}
+  
+#about-me-title {
+  font-weight: 400;
+  font-size: 20px;
+  color: #42526E;
+  margin: 40px auto;
+}
+  
+.headline p#about-me-paragraph {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #42526E;
+  margin: auto 12px;
+}
+  
+.headline .about-me-tags-list button {
+  background: var(--white);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  border-color: transparent;
+  letter-spacing: 0.03em;
+  padding: 12px;
+  color: #36B37E;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+  
+.about-me-tags-list {
+  margin: 24px 28px 72px;
+}
+  
+.about-me-languages {
+  color: #000;
+}
+  
+.about-me-items-image {
+  margin: 40px 124px 64px;
+}
+  
+.about-me-item {
+  background-image: url("assets/images/img-plaholder.png");
+  margin: 24px;
+  background-size: cover;
+  border: 1px solid #C1C7D0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+  
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+  
+.nav li {
+  list-style: none;
+}
+  
+.nav li a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+  
+  
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  margin: 22px 32px 64px;
+  justify-content:center;
+  gap: 16px;
+}
+  
+#logo-placeholder,
+#menu-hamburger,
+.menu-button-container,
+#menu-toggle {
+  display: none;
+}
   
   
   
-  .headline {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    font-weight: 700;
-    font-size: 40px;
-  
-  }
-  
-  .headline h1.green {
-    color: #36B37F;
-  }
-  
-  #supporting-text {
-  
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-  
-    text-align: center;
-  
-  
-    color: #172B4D;
-  
-  
-  
-  }
-  
-  #social-media-icons ul {
-    display: flex;
-  }
-  
-  #collapse-action-button {
-    background: url("assets/images/disabled.png") no-repeat 0px center;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #DFE1E6;
-    border-radius: 32px;
-    margin: 22px 0px;
-  }
-  
-  #indicator {
-    background: url("assets/images/indicator.png") no-repeat 0px center;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-  
-    margin: 22px auto;
-  }
-  
-  .project-title {
-    font-weight: 600;
-    font-size: 24px;
-    margin: 12px;
-  
-  
-  }
-  
-  .project-tags-list,
-  .social-media-icons-list,
-  .about-me-tags-list {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-  
-  .social-media-icons-list {
-    gap: 20px;
-  }
-  
-  .card button {
-    background: #ebebf0;
-    border-radius: 4px;
-    font-weight: 600;
-    font-size: 12px;
-    border-color: transparent;
-    letter-spacing: 0.03em;
-    height: 32px;
-    padding: 8px 12px;
-  
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  
-  
-  }
-  
-  .project-tags {
-    display: flex;
-  
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    background-image: url("assets/images/img-plaholder.png");
-    background-size: cover;
-    align-items: center;
-    gap: 16px;
-    border-radius: 8px;
-  
-    border: 1px solid #D0D9D4;
-    border-radius: 8px;
-    margin: 24px;
-    background-color: #FFFFFF;
-  }
-  
-  
-  button {
-    cursor: pointer;
-  }
-  
-  .green-button,
-  .card .green-button {
-    background: #36B37F;
-    border-radius: 4px;
-    border: none;
-    color: white;
-    padding: 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  
-    font-size: 16px;
-    font-weight: 500;
-  
-    height: 48px;
-  }
-  
-  .card-content {
-    background: #FFFFFF;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px;
-  }
-  
-  #detail-button {
-    margin: 29px auto 24px;
-  }
-  
-  #resume-button {
-    margin: 24px auto 60px;
-  }
-  
-  .card header {
-    height: 180px;
-    border: #42526E;
-    background: transparent;
-    width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  
-  }
-  
-  #about-me .primary-header {
-    margin: 68px auto 24px;
-  }
-  
-  #about-me-title {
-    font-weight: 400;
-    font-size: 20px;
-    color: #42526E;
-    margin: 40px auto;
-  }
-  
-  .headline p#about-me-paragraph {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 32px;
-    text-align: center;
-    color: #42526E;
-    margin: auto 12px;
-  }
-  
-  .headline .about-me-tags-list button {
-    background: #FFFFFF;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 12px;
-    border-color: transparent;
-    letter-spacing: 0.03em;
-    padding: 12px;
-    color: #36B37E;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  .about-me-tags-list {
-    margin: 24px 28px 72px;
-  }
-  
-  .about-me-languages {
-    color: #000;
-  }
-  
-  .about-me-items-image {
-    margin: 40px 124px 64px;
-  }
-  
-  .about-me-item {
-    background-image: url("assets/images/img-plaholder.png");
-    margin: 24px;
-    background-size: cover;
-    border: 1px solid #C1C7D0;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-  }
-  
-  .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-  }
-  
-  .nav li {
-    list-style: none;
-  }
-  
-  .nav li a {
-    color: var(--black);
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  
+/* Medium screens */
+@media all and (max-width: 800px) {
   .toolbar {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    margin: 22px 32px 64px;
-    justify-content:center;
-    gap: 16px;
+    justify-content: space-between;
   }
   
   #logo-placeholder,
-  #menu-hamburger,
   .menu-button-container,
+  .menu-icon {
+    visibility:visible;
+    display:initial;
+  }
+  
+  .nav,
   #menu-toggle {
     display: none;
   }
   
+  #logo-placeholder {
+    font-weight: 600;
+    font-size: 20px;
+    color: #28352F;
+  }
+}
   
-  
-  /* Medium screens */
-  @media all and (max-width: 800px) {
-    .toolbar {
-      justify-content: space-between;
-    }
-  
-    #logo-placeholder,
-    .menu-button-container,
-    .menu-icon {
-      visibility:visible;
-      display:initial;
-    }
-  
-    .nav,
-    #menu-toggle {
-      display: none;
-    }
-  
-    #logo-placeholder {
-      font-weight: 600;
-      font-size: 20px;
-      color: #28352F;
-    }
+/* Small screens */
+@media all and (max-width: 500px) {
+  .toolbar {
+    justify-content: space-between;
   }
   
-  /* Small screens */
-  @media all and (max-width: 500px) {
-    .toolbar {
-      justify-content: space-between;
-    }
-  
-    .nav,
-    #menu-toggle {
-      display: none;
-    }
-  }  
+  .nav,
+  #menu-toggle {
+    display: none;
+  }
+}  
