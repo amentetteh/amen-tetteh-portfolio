@@ -1,7 +1,7 @@
 /* variables */
 :root {
   --white: #fff;
-  --font-family-common: 'Inter';
+  --font-family-common1: 'Inter';
   --black: black;
 }
 
@@ -15,7 +15,7 @@
 /* body settings */
 body {
   background: var(--white);
-  font-family: var(--font-family-common);
+  font-family: var(--font-family-common1);
   font-style: normal;
   position: relative;
   display: flex;
