@@ -165,6 +165,14 @@ button {
   height: 48px;
 }
 
+.green-button:hover {
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.green-button:focus {
+  background: #008552;
+}
+
 .card-content {
   background: #fff;
   border-radius: 8px;
@@ -179,7 +187,7 @@ button {
 }
 
 #resume-button {
-  margin: 24px auto 60px;
+  margin: 24px auto 36px;
 }
 
 .card header {
@@ -240,7 +248,7 @@ button {
 }
 
 .about-me-items-image {
-  margin: 40px auto 64px;
+  margin: 40px auto 0;
 }
 
 .about-me-item {
