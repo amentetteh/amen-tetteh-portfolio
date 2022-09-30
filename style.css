@@ -43,7 +43,7 @@ main {
   font-size: 27px;
 }
 
-.works-cards{
+.works-cards {
   display: grid;
   grid-template-columns: auto auto auto;
 }
@@ -313,12 +313,12 @@ button {
     color: #28352f;
   }
 
-  .works-cards{
+  .works-cards {
     display: grid;
-    align-content:center;
+    align-content: center;
     grid-column: 1 / 3;
     grid-template-columns: repeat(1, 1fr);
-}
+  }
 }
 
 /* Small screens */
@@ -330,9 +330,5 @@ button {
   .nav,
   #menu-toggle {
     display: none;
-  }
-
-  .works-cards{
-    display: grid;
   }
 }
