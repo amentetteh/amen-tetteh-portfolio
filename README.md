@@ -5,8 +5,8 @@
 ## Built With
 
 - Major languages :\
-  **HTML5**  \
-  **CSS3**
+- HTML5  \
+- CSS3
 
 ## Getting Started
 
