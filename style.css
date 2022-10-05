@@ -289,6 +289,9 @@ button {
   justify-content: center;
   gap: 16px;
 }
+#message {
+  height: 100px;
+}
 
 #logo-placeholder,
 #menu-hamburger,
@@ -345,6 +348,9 @@ form {
   color: #172b4d;
   margin: 0 auto 58px;
 }
+#contacts-social-media-icons {
+  margin: 44px auto 17px;
+}
 
 ::placeholder {
   font-family: 'Inter', sans-serif;
@@ -398,3 +404,4 @@ form {
     display: none;
   }
 }
+
