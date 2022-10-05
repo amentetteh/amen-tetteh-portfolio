@@ -349,6 +349,12 @@ form {
   margin: 44px auto 17px;
 }
 
+#footer-image {
+  height: 100%;
+  width: 100%;
+  margin: 320px auto 8px;
+}
+
 /* Medium screens */
 @media all and (max-width: 800px) {
   .toolbar {
