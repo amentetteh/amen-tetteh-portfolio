@@ -289,9 +289,6 @@ button {
   justify-content: center;
   gap: 16px;
 }
-#message {
-  height: 100px;
-}
 
 #logo-placeholder,
 #menu-hamburger,
@@ -334,10 +331,9 @@ form {
   line-height: 24px;
 }
 
-.contact-form textarea#textarea {
+.contact-form textarea#message {
   border: 1px solid #60c095;
-  font-family: initial;
-  font-size: 50px;
+  height: initial;
 }
 
 #contact-header-message {
@@ -348,17 +344,9 @@ form {
   color: #172b4d;
   margin: 0 auto 58px;
 }
+
 #contacts-social-media-icons {
   margin: 44px auto 17px;
-}
-
-::placeholder {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #091e42;
 }
 
 /* Medium screens */
