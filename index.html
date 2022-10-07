@@ -35,7 +35,7 @@
   <main class="content">
     <section class="headline" id="headline-intro">
       <div class="headline-greeting">
-        <h2 class="primary-header">
+        <h2 class="primary-header" id="hello-message">
           Hey there. I’m Amen
         </h2>
         <h2 class="primary-header green">
@@ -231,21 +231,23 @@
       <form action="https://formspree.io/f/xgeqyrjy" method="post">
         <input class="field" name="fullName" id="fullName" type="text" placeholder="Full name" maxlength="30" autocomplete="off" required>
         <input class="field" name="email" id="email" type="email" placeholder="Email address" maxlength="30"  autocomplete="off" required>
-        <textarea class="field" id="message" name="message" rows="6" placeholder="Enter text here" maxlength="500" autocomplete="off" required></textarea>
+        <textarea class="field" id="message" name="message" rows="4" placeholder="Enter text here" maxlength="500" autocomplete="off" required></textarea>
         <button class="green-button" id="contact-submit" type="submit">Get in touch</button>
       </form>
-      <div id="contacts-social-media-icons">
-        <ul class="social-media-icons-list">
-          <li><a class="twitter" href=""><img src="assets/images/twitter.png" alt="Twitter"></a></li>
-          <li><a class="linkedin" href=""><img src="assets/images/linkedin.png" alt="Linkedin"></a></li>
-          <li><a class="Medium" href=""><img src="assets/images/medium.png" alt="Medium"></a></li>
-          <li><a class="Github" href=""><img src="assets/images/github.png" alt="Github"></a></li>
-          <li><a class="AngelList" href=""><img src="assets/images/angellist.png" alt="AngelList"></a></li>
-        </ul>
-      </div>
-      <label id="my-email" for="">tkamen@outlook.com</label>
-    </section>
+     </section>
   </main>
+  <footer>
+    <img id="desktop-footer-image" src="assets/images/desktop-footer-rectangle.png" alt="Desktop Footer Rectangle">
+    <ul class="social-media-icons-list" id="footer-contacts-social-media-icons">
+      <li><a class="twitter" href=""><img src="assets/images/twitter.png" alt="Twitter"></a></li>
+      <li><a class="linkedin" href=""><img src="assets/images/linkedin.png" alt="Linkedin"></a></li>
+      <li><a class="Medium" href=""><img src="assets/images/medium.png" alt="Medium"></a></li>
+      <li><a class="Github" href=""><img src="assets/images/github.png" alt="Github"></a></li>
+      <li><a class="AngelList" href=""><img src="assets/images/angellist.png" alt="AngelList"></a></li>
+    </ul>
+    <label id="my-email" for="">tkamen@outlook.com</label>
+    <img id="footer-image" src="assets/images/footer.png" alt="Footer">   
+  </footer>
 </body>
 
 </html>
