@@ -300,7 +300,7 @@ button {
   align-items: center;
   justify-content: center;
   margin: 60px 24px 24px;
-  padding: auto 10px;
+  padding: auto 136px;
 }
 
 form {
@@ -331,7 +331,7 @@ form {
 
 .contact-form textarea#message {
   border: 1px solid #60c095;
-  height: initial;
+  height: 100%;
 }
 
 #contact-header-message {
@@ -341,10 +341,6 @@ form {
   text-align: center;
   color: #172b4d;
   margin: 0 auto 58px;
-}
-
-.about-me-item-list li {
-  max-width: 369px;
 }
 
 #contacts-social-media-icons {
@@ -404,7 +400,7 @@ footer {
   .about-me-item-list {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin-top: 28px;
+    margin: auto 150px;
   }
 
   #supporting-text {
@@ -416,18 +412,13 @@ footer {
     color: #172b4d;
   }
 
-  #about-me-paragraph {
-    margin-left: 200px;
-    margin-right: 200px;
-  }
-
   .headline p#about-me-paragraph {
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
     text-align: center;
     color: #42526e;
-    margin: auto 200px;
+    margin: auto 20vw;
   }
 
   .about-me-intro {
@@ -447,12 +438,12 @@ footer {
   }
 
   .contact-form {
+    margin: 188px 0 0;
     background: url("assets/images/illustration-contact-form-2-desktop.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    margin-bottom: 0;
-    padding: 0 100px;
+    padding: 0 174px;
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -465,11 +456,13 @@ footer {
     align-items: flex-start;
     justify-content: center;
     gap: 24px;
-    width: 100%;
+    flex-grow: 3;
   }
 
   #contact-header-message {
     margin-top: 60px;
+    font-size: 30px;
+    flex-grow: 2;
   }
 
   #hello-message {
@@ -490,16 +483,6 @@ footer {
     margin-bottom: 0;
   }
 
-  input[name=fullName] {
-    display: none;
-  }
-
-  #first-last-name {
-    display: flex;
-    width: 100%;
-    gap: 24px;
-  }
-
   #desktop-footer-image {
     display: inline;
     visibility: visible;
@@ -507,8 +490,12 @@ footer {
     margin: 0 auto 17px;
   }
 
-  #contacts-social-media-icons {
+  #footer-contacts-social-media-icons {
     margin: 0 auto 0;
+  }
+
+  #contacts-social-media-icons li {
+    background-size: 100% 100%;
   }
 
   .contact-form button#contact-submit {
