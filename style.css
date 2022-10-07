@@ -323,6 +323,10 @@ form {
   font-size: 15px;
 }
 
+.contact-form .field:hover {
+  padding: 15px 36px;
+}
+
 .contact-form button#contact-submit {
   font-weight: 500;
   font-size: 17px;
