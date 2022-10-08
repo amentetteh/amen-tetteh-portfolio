@@ -68,6 +68,17 @@ body {
   margin: 60px 24px;
   text-align: center;
   color: #172b4d;
+  animation: typing 2.5s steps(50, end) forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 85%;
+  }
 }
 
 #social-media-icons ul {
@@ -86,7 +97,6 @@ body {
 
 #indicator {
   background: url("assets/images/indicator.png") no-repeat 0 center;
-  cursor: pointer;
   width: 40px;
   height: 40px;
   margin: 22px auto;
@@ -115,6 +125,20 @@ body {
 
 button {
   cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.06);
+}
+
+#headline-intro .green {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 .card button {
@@ -206,6 +230,9 @@ button {
 
 #about-me .primary-header {
   margin: 68px auto 24px;
+  font-weight: 800;
+  font-size: 48px;
+  color: red;
 }
 
 #about-me-title {
@@ -381,6 +408,7 @@ footer {
   .nav {
     visibility: visible;
     display: initial;
+    z-index: 2;
   }
 
   #logo-placeholder,
@@ -504,5 +532,22 @@ footer {
 
   .contact-form button#contact-submit {
     margin-bottom: 237px;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 55vw;
+    }
+  }
+
+  #about-me .primary-header {
+    margin: 68px auto 24px;
+    font-weight: 800;
+    font-size: 48px;
+    color: red;
   }
 }
