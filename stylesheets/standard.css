@@ -12,6 +12,7 @@
   font-style: normal;
   src: url("https://fonts.googleapis.com/css?family=Inter");
 }
+
 /* body settings */
 body {
   background: #fff;
@@ -34,5 +35,3 @@ a {
 img {
   width: 100%;
 }
-
-/*# sourceMappingURL=standard.css.map */
