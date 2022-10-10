@@ -43,7 +43,7 @@ body {
   display: grid;
   align-content: center;
   grid-column: 1 / 3;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .headline#headline-intro {
