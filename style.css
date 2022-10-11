@@ -412,6 +412,8 @@ footer {
     visibility: visible;
     display: initial;
     z-index: 2;
+    position: fixed;
+    margin: 30px auto;
   }
 
   #logo-placeholder,
@@ -560,6 +562,6 @@ footer {
   }
 
   #recent-works .primary-header {
-    margin: 0 auto 52px;
+    margin: 52px auto;
   }
 }
