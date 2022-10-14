@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My Portfolio</title>
+  <title>Amen's Portfolio</title>
   <meta name="description" content="Amen TETTEH, Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
@@ -18,7 +17,7 @@
       Welcome
     </div>
     <!-- Hamburger icon -->
-    <input class="menu-hamburger" id="menu-toggle" type="checkbox" />
+    <input class="menu-hamburger" id="menu-toggle" type="checkbox"/>
     <label class='menu-button-container' for="menu-toggle">
       <img class="menu-icon" src="assets/images/menu-icon.png" alt="Menu Icon">
     </label>
@@ -35,9 +34,9 @@
   <main class="content">
     <section class="headline" id="headline-intro">
       <div class="headline-greeting">
-        <h2 class="primary-header" id="hello-message">
+        <h1 class="primary-header" id="hello-message">
           Hey there. I’m Amen
-        </h2>
+        </h1>
         <h2 class="primary-header green">
           I’m a software developer
         </h2>
@@ -50,11 +49,11 @@
       </p>
       <div id="social-media-icons">
       <ul class="social-media-icons-list">
-        <li><a class="twitter" href=""><img src="assets/images/twitter.png" alt="Twitter"></a></li>
-        <li><a class="linkedin" href=""><img src="assets/images/linkedin.png" alt="Linkedin"></a></li>
-        <li><a class="Medium" href=""><img src="assets/images/medium.png" alt="Medium"></a></li>
-        <li><a class="Github" href=""><img src="assets/images/github.png" alt="Github"></a></li>
-        <li><a class="AngelList" href=""><img src="assets/images/angellist.png" alt="AngelList"></a></li>
+        <li><a class="twitter" href="twitter.com"><img src="assets/images/twitter.png" alt="Twitter"></a></li>
+        <li><a class="linkedin" href="linkedin.com"><img src="assets/images/linkedin.png" alt="Linkedin"></a></li>
+        <li><a class="Medium" href="medium.com"><img src="assets/images/medium.png" alt="Medium"></a></li>
+        <li><a class="Github" href="github.com"><img src="assets/images/github.png" alt="Github"></a></li>
+        <li><a class="AngelList" href="angellist.com"><img src="assets/images/angellist.png" alt="AngelList"></a></li>
       </ul>
     </div>
       <p id="collapse-action-button"></p>
@@ -62,7 +61,7 @@
     <section class="works" id="recent-works">
       <h2 class="primary-header">
         My Recent Works
-        <p id="indicator"></p>
+        <span id="indicator"></span>
       </h2>
       <ul class="works-cards">
         <li class="card">
@@ -79,7 +78,7 @@
             </ul>
             </p>
 
-            <button class="green-button" id="detail-button">See Project</button>
+            <button class="green-button detail-button">See Project</button>
           </div>
         </li>
 
@@ -97,7 +96,7 @@
             </ul>
             </p>
 
-            <button class="green-button" id="detail-button">See Project</button>
+            <button class="green-button detail-button">See Project</button>
           </div>
         </li>
 
@@ -115,7 +114,7 @@
             </ul>
             </p>
 
-            <button class="green-button" id="detail-button">See Project</button>
+            <button class="green-button detail-button">See Project</button>
           </div>
         </li>
 
@@ -133,7 +132,7 @@
             </ul>
             </p>
 
-            <button class="green-button" id="detail-button">See Project</button>
+            <button class="green-button detail-button">See Project</button>
           </div>
         </li>
 
@@ -151,7 +150,7 @@
             </ul>
             </p>
 
-            <button class="green-button" id="detail-button">See Project</button>
+            <button class="green-button detail-button">See Project</button>
           </div>
         </li>
 
@@ -169,7 +168,7 @@
             </ul>
             </p>
 
-            <button class="green-button" id="detail-button">See Project</button>
+            <button class="green-button detail-button">See Project</button>
           </div>
         </li>
       </ul>
@@ -191,7 +190,7 @@
         <li class="about-me-item">
           <img class="about-me-items-image" src="assets/images/icon-languages.svg" alt="Language">
 
-          <p id="about-me-languages">Languages</p>
+          <p class="about-me-languages">Languages</p>
           <ul class="about-me-tags-list">
             <li><button class="tag-button">Javascript</button></li>
             <li><button class="tag-button">Ruby</button> </li>
@@ -214,7 +213,7 @@
         <li class="about-me-item">
           <img class="about-me-items-image" src="assets/images/icon-skills.svg" alt="Skills">
 
-          <p id="about-me-languages">Skills</p>
+          <p class="about-me-languages">Skills</p>
           <ul class="about-me-tags-list">
             <li><button class="tag-button">Codekit</button></li>
             <li><button class="tag-button">GitHub</button> </li>
@@ -229,21 +228,21 @@
     <section class="contact-form" id="contact-form">
       <h2 id="contact-header-message"> I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
       <form action="https://formspree.io/f/xgeqyrjy" method="post">
-        <input class="field" name="fullName" id="fullName" type="text" placeholder="Full name" maxlength="30" autocomplete="off" required>
-        <input class="field" name="email" id="email" type="email" placeholder="Email address" maxlength="30"  autocomplete="off" required>
-        <textarea class="field" id="message" name="message" rows="4" placeholder="Enter text here" maxlength="500" autocomplete="off" required></textarea>
-        <button class="green-button" id="contact-submit" type="submit">Get in touch</button>
+        <input class="field" name="fullName"arial-label="Full Name" id="fullName" type="text" placeholder="Full name" maxlength="30" autocomplete="off" required>
+        <input class="field" name="email" aria-label="Email" id="email" type="email" placeholder="Email address" maxlength="30"  autocomplete="off" required>
+        <textarea class="field" id="message"aria-label="message" name="message" rows="4" placeholder="Enter text here" maxlength="500" autocomplete="off" required></textarea>
+        <button class="green-button" aria-labelledby="Get in touch" id="contact-submit" type="submit">Get in touch</button>
       </form>
      </section>
   </main>
   <footer>
     <img id="desktop-footer-image" src="assets/images/desktop-footer-rectangle.png" alt="Desktop Footer Rectangle">
     <ul class="social-media-icons-list" id="footer-contacts-social-media-icons">
-      <li><a class="twitter" href=""><img src="assets/images/twitter.png" alt="Twitter"></a></li>
-      <li><a class="linkedin" href=""><img src="assets/images/linkedin.png" alt="Linkedin"></a></li>
-      <li><a class="Medium" href=""><img src="assets/images/medium.png" alt="Medium"></a></li>
-      <li><a class="Github" href=""><img src="assets/images/github.png" alt="Github"></a></li>
-      <li><a class="AngelList" href=""><img src="assets/images/angellist.png" alt="AngelList"></a></li>
+      <li><a class="twitter" href="twitter.com"><img src="assets/images/twitter.png" alt="Twitter"></a></li>
+      <li><a class="linkedin" href="linkedin.com"><img src="assets/images/linkedin.png" alt="Linkedin"></a></li>
+      <li><a class="Medium" href="medium.com"><img src="assets/images/medium.png" alt="Medium"></a></li>
+      <li><a class="Github" href="github.com"><img src="assets/images/github.png" alt="Github"></a></li>
+      <li><a class="AngelList" href="angellist.com"><img src="assets/images/angellist.png" alt="AngelList"></a></li>
     </ul>
     <label id="my-email" for="">tkamen@outlook.com</label>
     <img id="footer-image" src="assets/images/footer.png" alt="Footer">   
