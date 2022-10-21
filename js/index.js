@@ -123,99 +123,21 @@ function injectbuildProjectDetailsWindowHML() {
 
 //Add form validation
 
-/* let form=document.querySelector("#contact-form form"),
-emailEl=document.querySelector("#contact-form form #email"),
-emailClass=document.querySelector("#email")
-
-function isEmailValid(email){
-    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-z\-0-9]+\.)+[a-z]{2,}))$/;
-    return re.test(email);
-};
-
-function isRequired(value){
-    return value === '' ? false : true;
-}
-
-function showSuccess(input){
-    // get the form-field element
-    const formField = input.parentElement;
-
-    // remove the error class
-    formField.classList.remove('error');
-    formField.classList.add('success');
-
-    // hide the error message
-    const error = formField.querySelector('small');
-    error.textContent = '';
-}
-
-function showError(input, message){
-
-    // add the error class
-    emailClass.classList.remove('success');
-    emailClass.classList.add('error');
-
-    // show the error message
-    const error = document.querySelector('#error-message');
-    error.innerHTML = message;
-    console.log("dddddddddddddddd")
-}; 
-
-
-function checkEmail(){
-    let valid = false;
-    const email = emailEl.value.trim();
-    if (!isRequired(email)) {
-        showError(emailEl, 'Email cannot be blank.');
-    } else if (!isEmailValid(email)) {
-        showError(emailEl, 'Email is not valid.')
-    } else {
-        showSuccess(emailEl);
-        valid = true;
-    }
-    return valid;
-}
-
-form.addEventListener('input', function (event) {
-    if(event.target.id==='email')  {
-        console.log(checkEmail())
-        checkEmail();
-    }   
-});
-
-form.addEventListener('submit', function (e) {
-    // prevent the form from submitting
-    e.preventDefault();
-
-    // validate email fields
-    let isEmailValid = checkEmail();
-
-    let isFormValid = isEmailValid ;
-
-    // submit to the server if the form is valid ,either display 
-    if (!isFormValid) {
-        console.log("sssssssssssssssssssssssss")
-        showError()
-    }
-});
- */
 
 let form = document.querySelector('#contact-form form'),
   errMessageZone = document.querySelector('#error-message'),
-  emailClass = document.querySelector('.field .email');
+  emailClass = document.querySelector('#contact-form .email');
 
 form.addEventListener('submit', (event) => {
-  const email = document.querySelector('#email');
-  console.log('email.value');
-  console.log(email.value);
-  console.log('email.value');
-  const emailRegExp = /[A-Z]/;
-  if (!emailRegExp.test(email.value)) {
+  let email = document.querySelector('#email');
+  let emailRegExp = /[A-Z]/;
+
+  if (!emailRegExp.test(email.value.trim())) {
     form.submit();
   } else {
+
     event.preventDefault();
-    emailClass.classList.remove('success');
-    emailClass.classList.add('error');
-    errMessageZone.innerText = 'Please Enter Your Email Only In Lower Case';
+    //emailClass.classList.toggle('error');
+    errMessageZone.innerText = 'Please enter an entirely lower case email, please';
   }
 });
