@@ -69,7 +69,7 @@
     <!-- Projects To be loaded dynamically -->
     <section class="works" id="recent-works">
 
-      
+
     </section>
 
     <section class="headline" id="about-me">
@@ -127,14 +127,15 @@
       <h2 id="contact-header-message"> I'm always interested in hearing about new projects, so if you'd like to chat
         please get in touch.</h2>
       <form action="https://formspree.io/f/xgeqyrjy" method="post">
-        <input class="field" name="fullName" arial-label="Full Name" id="fullName" type="text" placeholder="Full name"
+        <input class="field fullName" name="fullName" arial-label="Full Name" id="fullName" type="text" placeholder="Full name"
           maxlength="30" autocomplete="off" required>
-        <input class="field" name="email" aria-label="Email" id="email" type="email" placeholder="Email address"
+        <input class="field email" name="email" aria-label="Email" id="email" placeholder="Email address"
           maxlength="30" autocomplete="off" required>
-        <textarea class="field" id="message" aria-label="message" name="message" rows="4" placeholder="Enter text here"
+        <textarea class="field message" id="message" aria-label="message" name="message" rows="4" placeholder="Enter text here"
           maxlength="500" autocomplete="off" required></textarea>
         <button class="green-button" aria-labelledby="Get in touch" id="contact-submit" type="submit">Get in
           touch</button>
+        <span id="error-message"></span>
       </form>
     </section>
 
