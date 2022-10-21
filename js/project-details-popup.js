@@ -17,8 +17,8 @@ function buildProjectDetailsWindow(
     <div class="project-detail-headline">
         <h1>${title}</h1>
         <div class="project-detail-bottom-goup-desktop">
-            <button class="green-button detail-button">See Live <img src="assets/images/" alt="Live Version" /></button>
-            <button class="green-button detail-button">See Source</button>
+            <button class="green-button detail-button">See Live  <img src="assets/images/see-live-icon.png" alt="Live Version"/></button>
+            <button class="green-button detail-button">See Source<img src="assets/images/see-github-source.png" alt="Live Source"/></button>
         </div>
     </div>
     <ul>`;
@@ -34,8 +34,8 @@ function buildProjectDetailsWindow(
         ${description}
     </p>
     <div class="project-detail-bottom-goup-mobile">
-        <button class="green-button detail-button">See Live  <i class="icon"></i></button>
-        <button class="green-button detail-button">See Source</button>
+        <button class="green-button detail-button">See Live  <img src="assets/images/see-live-icon.png" alt="Live Version"/></i></button>
+        <button class="green-button detail-button">See Source<img src="assets/images/see-github-source.png" alt="Live Source"/></button>
     </div>
     <div>`;
     return res;
