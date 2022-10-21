@@ -9,7 +9,7 @@ function buildProjectDetailsWindow(
     technologies =["Ruby on rails","css","Javascript","html"]
 ){
     let res=""
-    res+= `<div class="project-details-container">
+    res += `<div class="project-details-container">
     <div class="project-details-header">
     <span class="close">&times;</span>
     <img src=${featured_image_link} alt="#">
@@ -17,11 +17,11 @@ function buildProjectDetailsWindow(
     <div class="project-detail-headline">
         <h1>${title}</h1>
         <div class="project-detail-bottom-goup-desktop">
-            <button class="green-button detail-button">See Live  <i class="icon "></i></button>
+            <button class="green-button detail-button">See Live <img src="assets/images/" alt="Live Version" /></button>
             <button class="green-button detail-button">See Source</button>
         </div>
     </div>
-    <ul>`
+    <ul>`;
     let techs=""
     let lg=isMobile()?3:technologies.length
     for (let i = 0; i < lg; i++) {
