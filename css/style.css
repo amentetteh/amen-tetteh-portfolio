@@ -60,7 +60,7 @@ body {
 }
 
 .headline#headline-intro {
-  background: url("../assets/images/header-illsutration-mobile.png");
+  background: url('../assets/images/header-illsutration-mobile.png');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
@@ -99,7 +99,7 @@ body {
 }
 
 #collapse-action-button {
-  background: url("../assets/images/disabled.png") no-repeat 0 center;
+  background: url('../assets/images/disabled.png') no-repeat 0 center;
   cursor: pointer;
   width: 40px;
   height: 40px;
@@ -121,7 +121,7 @@ body {
 }
 
 #indicator {
-  background: url("../assets/images/indicator.png") no-repeat 0 center;
+  background: url('../assets/images/indicator.png') no-repeat 0 center;
   width: 40px;
   height: 40px;
   margin: 22px auto;
@@ -223,7 +223,7 @@ button:hover {
 .card {
   display: flex;
   flex-direction: column;
-  background-image: url("../assets/images/img-plaholder.png");
+  background-image: url('../assets/images/img-plaholder.png');
   background-size: cover;
   align-items: center;
   gap: 16px;
@@ -283,7 +283,7 @@ button:hover {
 }
 
 .about-me-intro {
-  background-image: url("../assets/images/aboutme-illsutration-mobile.png");
+  background-image: url('../assets/images/aboutme-illsutration-mobile.png');
   background-size: 100%;
   background-repeat: no-repeat;
   margin-top: 88px;
@@ -338,7 +338,7 @@ button:hover {
 }
 
 .about-me-item {
-  background-image: url("../assets/images/img-plaholder.png");
+  background-image: url('../assets/images/img-plaholder.png');
   background-size: cover;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
@@ -436,6 +436,12 @@ header .sub-toolbar {
   justify-content: center;
   margin: 60px 24px 24px;
   padding: auto 136px;
+}
+
+#contact-form #error-message {
+  color: red;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 form {
@@ -577,7 +583,7 @@ footer {
 }
 
 .icon {
-  background-image: url("../assets/images/see-live-icon.png");
+  background-image: url('../assets/images/see-live-icon.png');
   background-repeat: no-repeat;
   background-size: 24px 24px;
   color: red;
@@ -687,7 +693,7 @@ footer {
   }
 
   .about-me-intro {
-    background: url("../assets/images/illustration-about-me-desktop.png");
+    background: url('../assets/images/illustration-about-me-desktop.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -695,7 +701,7 @@ footer {
   }
 
   .headline#headline-intro {
-    background: url("../assets/images/header-llustration-desktop@2x.png");
+    background: url('../assets/images/header-llustration-desktop@2x.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -703,7 +709,7 @@ footer {
 
   .contact-form {
     margin: 188px 0 0;
-    background: url("../assets/images/illustration-contact-form-2-desktop.png");
+    background: url('../assets/images/illustration-contact-form-2-desktop.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
@@ -764,6 +770,9 @@ footer {
 
   #contact-form #error-message {
     margin-bottom: 237px;
+    color: red;
+    font-size: 24px;
+    font-weight: 700;
   }
 
   @keyframes typing {
