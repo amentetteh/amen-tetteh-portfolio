@@ -209,6 +209,11 @@ button:hover {
   line-height: 24px;
 }
 
+.project-details-container img {
+  width: 100%;
+  height: auto;
+}
+
 .project-detail-bottom-goup-mobile .detail-button img {
   height: 16px;
   width: 16px;
@@ -583,11 +588,6 @@ footer {
   display: block;
 }
 
-.project-details-container img {
-  width: 100%;
-  height: auto;
-}
-
 .project-details-container .close {
   color: #aaa;
   float: right;
@@ -793,14 +793,6 @@ footer {
     flex: 1 1 auto;
   }
 
-  #project-detail-id .project-detail-bottom-goup-desktop {
-    margin: 0;
-  }
-
-  #project-detail-id .detail-button {
-    margin: 0;
-  }
-
   .project-details-container {
     display: flex;
     flex-direction: column;
@@ -829,6 +821,17 @@ footer {
     flex-shrink: 5;
   }
 
+  #project-detail-id .project-detail-bottom-goup-desktop {
+    margin: 0;
+  }
+
+  .project-detail-bottom-goup-desktop .detail-button {
+    min-width: 150px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
   .project-detail-headline h1 {
     flex-shrink: 7;
   }
@@ -836,12 +839,6 @@ footer {
   .project-details-container img {
     width: 100%;
     height: auto;
-  }
-  .project-detail-bottom-goup-desktop .detail-button {
-    min-width: 150px;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
   }
 
   .project-detail-bottom-goup-desktop .detail-button img {
