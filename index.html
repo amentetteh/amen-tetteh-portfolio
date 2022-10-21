@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +8,34 @@
   <meta name="description" content="Amen TETTEH, Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <section class="project-detail" id="project-detail-id">
+
+  </section>
   <header class="toolbar">
+    <div class="sub-toolbar" >
     <!-- Logo -->
     <div id="logo-placeholder">
       Welcome
     </div>
-    <!-- Hamburger icon -->
-    <input class="menu-hamburger" id="menu-toggle" type="checkbox"/>
-    <label class='menu-button-container' for="menu-toggle">
-      <img class="menu-icon" src="assets/images/menu-icon.png" alt="Menu Icon">
-    </label>
     <!-- Menu -->
     <nav class="nav">
       <ul class="menu">
-        <li><a href="#recent-works">Portfolio</a></li>
-        <li><a href="#about-me">About</a></li>
-        <li><a href="#contact-form">Contact</a></li>
+        <li><a class="nav-link" href="#recent-works">Portfolio</a></li>
+        <li><a class="nav-link" href="#about-me">About</a></li>
+        <li><a class="nav-link" href="#contact-form">Contact</a></li>
       </ul>
     </nav>
+    <!-- Hamburger icon -->
+    <label class='menu-button-container' for="menu-button-container">
+
+      <img class="cancel-icon" src="assets/images/cancel-gray.png" alt="Cancel Menu">
+      <img class="menu-icon" src="assets/images/menu-icon.png" alt="Cancel Menu">
+    </label>
+  </div>
   </header>
   <!-- Main content -->
   <main class="content">
@@ -48,131 +55,21 @@
         don’t hestiate to contact me.
       </p>
       <div id="social-media-icons">
-      <ul class="social-media-icons-list">
-        <li><a class="twitter" href="twitter.com"><img src="assets/images/twitter.png" alt="Twitter"></a></li>
-        <li><a class="linkedin" href="linkedin.com"><img src="assets/images/linkedin.png" alt="Linkedin"></a></li>
-        <li><a class="Medium" href="medium.com"><img src="assets/images/medium.png" alt="Medium"></a></li>
-        <li><a class="Github" href="github.com"><img src="assets/images/github.png" alt="Github"></a></li>
-        <li><a class="AngelList" href="angellist.com"><img src="assets/images/angellist.png" alt="AngelList"></a></li>
-      </ul>
-    </div>
+        <ul class="social-media-icons-list">
+          <li><a class="twitter" href="twitter.com"><img src="assets/images/twitter.png" alt="Twitter"></a></li>
+          <li><a class="linkedin" href="linkedin.com"><img src="assets/images/linkedin.png" alt="Linkedin"></a></li>
+          <li><a class="Medium" href="medium.com"><img src="assets/images/medium.png" alt="Medium"></a></li>
+          <li><a class="Github" href="github.com"><img src="assets/images/github.png" alt="Github"></a></li>
+          <li><a class="AngelList" href="angellist.com"><img src="assets/images/angellist.png" alt="AngelList"></a></li>
+        </ul>
+      </div>
       <p id="collapse-action-button"></p>
     </section>
+
+    <!-- Projects To be loaded dynamically -->
     <section class="works" id="recent-works">
-      <h2 class="primary-header">
-        My Recent Works
-        <span id="indicator"></span>
-      </h2>
-      <ul class="works-cards">
-        <li class="card">
-          <header class="card-header"></header>
-          <div class="card-content">
-            <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
-            <p class="project-tags">
 
-            <ul class="project-tags-list">
-              <li><button class="tag-button">Ruby on rails</button></li>
-              <li><button class="tag-button">css</button></li>
-              <li><button class="tag-button">Javascript</button></li>
-              <li><button class="tag-button">html</button></li>
-            </ul>
-            </p>
-
-            <button class="green-button detail-button">See Project</button>
-          </div>
-        </li>
-
-        <li class="card">
-          <header class="card-header"></header>
-          <div class="card-content">
-            <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
-            <p class="project-tags">
-
-            <ul class="project-tags-list">
-              <li><button class="tag-button">Ruby on rails</button></li>
-              <li><button class="tag-button">css</button></li>
-              <li><button class="tag-button">Javascript</button></li>
-              <li><button class="tag-button">html</button></li>
-            </ul>
-            </p>
-
-            <button class="green-button detail-button">See Project</button>
-          </div>
-        </li>
-
-        <li class="card">
-          <header class="card-header"></header>
-          <div class="card-content">
-            <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
-            <p class="project-tags">
-
-            <ul class="project-tags-list">
-              <li><button class="tag-button">Ruby on rails</button></li>
-              <li><button class="tag-button">css</button></li>
-              <li><button class="tag-button">Javascript</button></li>
-              <li><button class="tag-button">html</button></li>
-            </ul>
-            </p>
-
-            <button class="green-button detail-button">See Project</button>
-          </div>
-        </li>
-
-        <li class="card">
-          <header class="card-header"></header>
-          <div class="card-content">
-            <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
-            <p class="project-tags">
-
-            <ul class="project-tags-list">
-              <li><button class="tag-button">Ruby on rails</button></li>
-              <li><button class="tag-button">css</button></li>
-              <li><button class="tag-button">Javascript</button></li>
-              <li><button class="tag-button">html</button></li>
-            </ul>
-            </p>
-
-            <button class="green-button detail-button">See Project</button>
-          </div>
-        </li>
-
-        <li class="card">
-          <header class="card-header"></header>
-          <div class="card-content">
-            <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
-            <p class="project-tags">
-
-            <ul class="project-tags-list">
-              <li><button class="tag-button">Ruby on rails</button></li>
-              <li><button class="tag-button">css</button></li>
-              <li><button class="tag-button">Javascript</button></li>
-              <li><button class="tag-button">html</button></li>
-            </ul>
-            </p>
-
-            <button class="green-button detail-button">See Project</button>
-          </div>
-        </li>
-
-        <li class="card">
-          <header class="card-header"></header>
-          <div class="card-content">
-            <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
-            <p class="project-tags">
-
-            <ul class="project-tags-list">
-              <li><button class="tag-button">Ruby on rails</button></li>
-              <li><button class="tag-button">css</button></li>
-              <li><button class="tag-button">Javascript</button></li>
-              <li><button class="tag-button">html</button></li>
-            </ul>
-            </p>
-
-            <button class="green-button detail-button">See Project</button>
-          </div>
-        </li>
-      </ul>
-
+      
     </section>
 
     <section class="headline" id="about-me">
@@ -224,17 +121,25 @@
         </li>
       </ul>
 
+
     </section>
     <section class="contact-form" id="contact-form">
-      <h2 id="contact-header-message"> I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+      <h2 id="contact-header-message"> I'm always interested in hearing about new projects, so if you'd like to chat
+        please get in touch.</h2>
       <form action="https://formspree.io/f/xgeqyrjy" method="post">
-        <input class="field" name="fullName"arial-label="Full Name" id="fullName" type="text" placeholder="Full name" maxlength="30" autocomplete="off" required>
-        <input class="field" name="email" aria-label="Email" id="email" type="email" placeholder="Email address" maxlength="30"  autocomplete="off" required>
-        <textarea class="field" id="message"aria-label="message" name="message" rows="4" placeholder="Enter text here" maxlength="500" autocomplete="off" required></textarea>
-        <button class="green-button" aria-labelledby="Get in touch" id="contact-submit" type="submit">Get in touch</button>
+        <input class="field" name="fullName" arial-label="Full Name" id="fullName" type="text" placeholder="Full name"
+          maxlength="30" autocomplete="off" required>
+        <input class="field" name="email" aria-label="Email" id="email" type="email" placeholder="Email address"
+          maxlength="30" autocomplete="off" required>
+        <textarea class="field" id="message" aria-label="message" name="message" rows="4" placeholder="Enter text here"
+          maxlength="500" autocomplete="off" required></textarea>
+        <button class="green-button" aria-labelledby="Get in touch" id="contact-submit" type="submit">Get in
+          touch</button>
       </form>
-     </section>
-  </main>
+    </section>
+
+
+     </main>
   <footer>
     <img id="desktop-footer-image" src="assets/images/desktop-footer-rectangle.png" alt="Desktop Footer Rectangle">
     <ul class="social-media-icons-list" id="footer-contacts-social-media-icons">
@@ -245,8 +150,9 @@
       <li><a class="AngelList" href="angellist.com"><img src="assets/images/angellist.png" alt="AngelList"></a></li>
     </ul>
     <label id="my-email" for="">tkamen@outlook.com</label>
-    <img id="footer-image" src="assets/images/footer.png" alt="Footer">   
+    <img id="footer-image" src="assets/images/footer.png" alt="Footer">
   </footer>
+  <script type="module" src="js/index.js"></script>
 </body>
 
 </html>
