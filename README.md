@@ -42,7 +42,7 @@ Deploy on any web hosting server cloud/in site and enjoy
 
 ## Authors
 
-👤 **Author**
+👤 **Amen TETTEH**
 
 - GitHub: [@amentetteh](https://github.com/amentetteh)
 - Twitter: [@amentetteh](https://twitter.com/amentetteh)
@@ -50,6 +50,12 @@ Deploy on any web hosting server cloud/in site and enjoy
 
 👤
 ## 🤝 Contributing
+
+👤 **Francis UCHE**
+
+- GitHub: [@francis3400](https://github.com/francis3400)
+- Twitter: [@FrancisBlinkz](https://twitter.com/FrancisBlinkz)
+- LinkedIn: [/francis-uche-888675213/](www.linkedin.com/in/francis-uche-888675213)
 
 Contributions, issues, and feature requests are welcome!
 
