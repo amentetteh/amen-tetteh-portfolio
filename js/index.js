@@ -123,7 +123,6 @@ function injectbuildProjectDetailsWindowHML() {
 
 //Add form validation
 
-
 let form = document.querySelector('#contact-form form'),
   errMessageZone = document.querySelector('#error-message'),
   emailClass = document.querySelector('#contact-form .email');
@@ -135,9 +134,29 @@ form.addEventListener('submit', (event) => {
   if (!emailRegExp.test(email.value.trim())) {
     form.submit();
   } else {
-
     event.preventDefault();
     //emailClass.classList.toggle('error');
-    errMessageZone.innerText = 'Please enter an entirely lower case email, please';
+    errMessageZone.innerText =
+      'Please enter an entirely lower case email, please';
   }
+});
+
+// preserving Data
+
+let data = {};
+
+form.addEventListener('input', function (e) {
+  switch (e.target.id) {
+    case 'fullName':
+      data.fullName = e.target.value;
+      console.log('hhhhhhhhhhhhhhhhhhhhhhhh');
+      break;
+    case 'email':
+      data.email = e.target.value;
+      break;
+    case 'message':
+      data.message = e.target.value;
+      break;
+  }
+  localStorage.setItem('contacts', data);
 });
