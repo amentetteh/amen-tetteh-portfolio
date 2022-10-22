@@ -151,7 +151,7 @@ document.addEventListener('change', () => {
 
   const data = {
     fullName: fullName.value,
-    message: message.value,
+    messsage: message.value,
     email: email.value,
   };
   localStorage.setItem('contacts', JSON.stringify(data));
@@ -161,8 +161,8 @@ window.addEventListener('DOMContentLoaded', function (e) {
     let contacts=JSON.parse(localStorage.getItem('contacts')) 
     if(contacts){
         fullName.value=contacts.fullName
-        message.value=contacts.email
-        email.value=contacts.message
+        message.value=contacts.message
+        email.value=contacts.email
     }   
   });
 
