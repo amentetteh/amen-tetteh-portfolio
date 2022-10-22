@@ -158,5 +158,15 @@ form.addEventListener('input', function (e) {
       data.message = e.target.value;
       break;
   }
-  localStorage.setItem('contacts', data);
+  localStorage.setItem('contacts', JSON.stringify(data));
 });
+
+window.addEventListener('DOMContentLoaded', function (e) {
+    let contacts=JSON.parse(localStorage.getItem('contacts')) 
+    if(contacts){
+        document.querySelector("form #fullName").value=contacts.fullName
+        document.querySelector("form #email").value=contacts.email
+        document.querySelector("form #message").value=contacts.message
+    }
+   
+  });
