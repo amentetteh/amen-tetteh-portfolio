@@ -143,30 +143,28 @@ form.addEventListener('submit', (event) => {
 
 // preserving Data
 
-let data = {};
+const fullName = document.getElementById('fullName');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
 
-form.addEventListener('input', function (e) {
-  switch (e.target.id) {
-    case 'fullName':
-      data.fullName = e.target.value;
-      console.log('hhhhhhhhhhhhhhhhhhhhhhhh');
-      break;
-    case 'email':
-      data.email = e.target.value;
-      break;
-    case 'message':
-      data.message = e.target.value;
-      break;
-  }
+document.addEventListener('change', () => {
+
+  const data = {
+    fullName: fullName.value,
+    message: message.value,
+    email: email.value,
+  };
   localStorage.setItem('contacts', JSON.stringify(data));
 });
 
 window.addEventListener('DOMContentLoaded', function (e) {
     let contacts=JSON.parse(localStorage.getItem('contacts')) 
     if(contacts){
-        document.querySelector("form #fullName").value=contacts.fullName
-        document.querySelector("form #email").value=contacts.email
-        document.querySelector("form #message").value=contacts.message
-    }
-   
+        fullName.value=contacts.fullName
+        message.value=contacts.email
+        email.value=contacts.message
+    }   
   });
+
+
+
